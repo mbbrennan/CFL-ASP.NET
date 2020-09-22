@@ -1,0 +1,61 @@
+﻿@model CFLv2.Models.Schedule
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Schedule</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Week)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Week)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GameDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.GameDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AwayTeam)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AwayTeam)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HomeTeam)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HomeTeam)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AwayPoints)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AwayPoints)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HomePoints)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HomePoints)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Attendance)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Attendance)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -1,0 +1,99 @@
+﻿@model IEnumerable<CFLv2.Models.Standing>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Rank)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LongName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Wins)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Loses)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ties)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Points)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PointsFor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PointsAgainst)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HomeWins)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AwayWins)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AwayRecord)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InDiv)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rank)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LongName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Wins)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Loses)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ties)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Points)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PointsFor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PointsAgainst)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HomeWins)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AwayWins)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AwayRecord)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InDiv)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
