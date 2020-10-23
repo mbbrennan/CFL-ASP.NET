@@ -210,7 +210,7 @@ namespace CFLv2.Models
                 new Standing
                 {
                     ID = 1,
-                    TeamID = 1,
+                    //TeamID = 1,
                     Rank = 0,
                     LongName = "BC Lions",
                     GP = 0,
@@ -230,7 +230,7 @@ namespace CFLv2.Models
                 new Standing
                 {
                     ID = 2,
-                    TeamID = 2,
+                    //TeamID = 2,
                     Rank = 0,
                     LongName = "Edmonton",
                     GP = 0,
@@ -250,7 +250,7 @@ namespace CFLv2.Models
                 new Standing
                 {
                     ID = 3,
-                    TeamID = 3,
+                    //TeamID = 3,
                     Rank = 0,
                     LongName = "Calgary",
                     GP = 0,
@@ -269,7 +269,7 @@ namespace CFLv2.Models
                 new Standing
                 {
                     ID = 4,
-                    TeamID = 4,
+                    //TeamID = 4,
                     Rank = 0,
                     LongName = "Saskatchewan",
                     GP = 0,
@@ -289,7 +289,7 @@ namespace CFLv2.Models
                 new Standing
                 {
                     ID = 5,
-                    TeamID = 5,
+                    //TeamID = 5,
                     Rank = 0,
                     LongName = "Winnipeg",
                     GP = 0,
@@ -309,7 +309,7 @@ namespace CFLv2.Models
                 new Standing
                 {
                     ID = 6,
-                    TeamID = 6,
+                    //TeamID = 6,
                     Rank = 0,
                     LongName = "Toronto",
                     GP = 0,
@@ -329,7 +329,7 @@ namespace CFLv2.Models
                 new Standing
                 {
                     ID = 7,
-                    TeamID = 7,
+                    //TeamID = 7,
                     Rank = 0,
                     LongName = "Hamilton",
                     GP = 0,
@@ -349,7 +349,7 @@ namespace CFLv2.Models
                 new Standing
                 {
                     ID = 8,
-                    TeamID = 8,
+                    //TeamID = 8,
                     Rank = 0,
                     LongName = "Ottawa",
                     GP = 0,
@@ -369,7 +369,7 @@ namespace CFLv2.Models
                 new Standing
                 {
                     ID = 9,
-                    TeamID = 9,
+                    //TeamID = 9,
                     Rank = 0,
                     LongName = "Montreal",
                     GP = 0,
@@ -390,7 +390,7 @@ namespace CFLv2.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=CFLDBx;Trusted_Connection=True;ConnectRetryCount=0");
+            optionsBuilder.UseSqlServer(@"Server=.;Database=CFLDB;Trusted_Connection=True;ConnectRetryCount=0");
         }
         public DbSet<Team> Teams { get; set; }
         public DbSet<Season> Seasons { get; set; }
@@ -442,7 +442,7 @@ namespace CFLv2.Models
     {
         [Key]
         public int ID { get; set; }
-        public int TeamID { get; set; }
+     //   public int TeamID { get; set; }
         [Display(Name = "Rank")]
         public int Rank { get; set; }
         [Display(Name = "Team")]
